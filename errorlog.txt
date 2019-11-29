@@ -1,0 +1,28 @@
+[29-Nov-2019 09:37:14 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Baza::$db in /home/kl2ag1/public_html/phpapp/inc/db.php:29
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/functions.php(13): Baza::db_query('SELECT * FROM m...')
+#1 /home/kl2ag1/public_html/phpapp/inc/template.php(20): get_menu(1, Array)
+#2 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 29
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/kl2ag1/public_html/phpapp/inc/db.php:29
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/functions.php(13): Baza::db_query('SELECT * FROM m...')
+#1 /home/kl2ag1/public_html/phpapp/inc/template.php(20): get_menu(1, Array)
+#2 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 29
+[29-Nov-2019 09:39:05 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/kl2ag1/public_html/phpapp/inc/db.php:29
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/functions.php(13): Baza::db_query('SELECT * FROM m...')
+#1 /home/kl2ag1/public_html/phpapp/inc/template.php(20): get_menu(1, Array)
+#2 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 29
+[29-Nov-2019 09:39:06 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/kl2ag1/public_html/phpapp/inc/db.php:29
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/functions.php(13): Baza::db_query('SELECT * FROM m...')
+#1 /home/kl2ag1/public_html/phpapp/inc/template.php(20): get_menu(1, Array)
+#2 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 29
