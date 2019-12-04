@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS menu;
 CREATE TABLE menu (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -12,10 +11,11 @@ INSERT INTO menu VALUES(NULL, 'formularz', 'Formularz', 2);
 INSERT INTO menu VALUES(NULL, 'userform', 'Użytkownicy', 3);
 INSERT INTO menu VALUES(NULL, 'klasa', 'Klasa', 4);
 
-
 CREATE TABLE posty (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	tresc VARCHAR NOT NULL
+	tresc VARCHAR NOT NULL,
+	user VARCHAR,
+	data DATE DEFAULT CURRENT_TIMESTAMP
 );
 
 DROP TABLE IF EXISTS users;
@@ -26,5 +26,6 @@ CREATE TABLE users (
 	email VARCHAR(50),
 	data DATE
 );
+
 -- INSERT INTO menu(tytul, plik, id) VALUES('Klasa', 'klasa', NULL);
 -- sqlite3 baza.db < baza.sql
