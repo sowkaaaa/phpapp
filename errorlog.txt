@@ -26,3 +26,23 @@ Stack trace:
 #2 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
 #3 {main}
   thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 29
+[06-Dec-2019 09:26:00 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function db_query() in /home/kl2ag1/public_html/phpapp/inc/users.php:45
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/userlogin.html(11): User->is_login('michal')
+#1 /home/kl2ag1/public_html/phpapp/inc/functions.php(35): include('/home/kl2ag1/pu...')
+#2 /home/kl2ag1/public_html/phpapp/inc/template.php(34): get_page_content(Array)
+#3 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#4 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 45
+[06-Dec-2019 09:26:56 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function db_query() in /home/kl2ag1/public_html/phpapp/inc/users.php:45
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/userlogin.html(11): User->is_login('michal')
+#1 /home/kl2ag1/public_html/phpapp/inc/functions.php(35): include('/home/kl2ag1/pu...')
+#2 /home/kl2ag1/public_html/phpapp/inc/template.php(34): get_page_content(Array)
+#3 /home/kl2ag1/public_html/phpapp/index.php(26): include_once('/home/kl2ag1/pu...')
+#4 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/users.php on line 45
+[06-Dec-2019 09:34:32 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/userlogin.html on line 11
+[06-Dec-2019 09:35:02 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/userlogin.html on line 11
+[06-Dec-2019 09:35:05 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/userlogin.html on line 11
+[06-Dec-2019 09:38:02 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '}' in /home/kl2ag1/public_html/phpapp/userlogin.html on line 11
