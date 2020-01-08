@@ -8,6 +8,20 @@ if (isset($_POST['wiadomosc'])) {
     Baza::db_exec($sql);
 }
 
+if (isset($_GET['akcja'])) {
+    $akcja = $_GET['akcja'];
+    $idw = $_GET['idw'];
+    switch ($akcja) {
+        case 'del':
+            $q = "DELETE FROM posty WHERE id = $idw";
+            Baza::db_exec($q);
+            $kom[] = "Usunięto wiadomość!";
+            break;
+        case 'edit':
+            ;
+            break;
+    }
+}
 
 Baza::db_query('SELECT * FROM posty');
 echo '<h3>Wiadomości</h3>';
@@ -22,10 +36,12 @@ foreach (Baza::$ret as $k => $t) {
 }
 echo '</ul>';
 
-
-if (isset($_GET['akcja'])){
-    ; // obsługa edycji wiadomości
+if (isset($_GET['akcja'])) {
+    ;  // obsługa edycji
 }
+
+global $user;
+if ($user->id) {
 ?>
 
 <form action="?id=<?php echo $strona['id']; ?>" method="POST" name="dane" id="dane">
@@ -40,3 +56,6 @@ if (isset($_GET['akcja'])){
     </div>
     <input type="submit" value="Wyślij" class="btn btn-primary">
 </form>
+<?php
+}
+?>

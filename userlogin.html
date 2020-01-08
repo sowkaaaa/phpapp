@@ -1,5 +1,5 @@
-<!-- <?php
 
+<!-- <?php
 if (isset($_POST['login'])) {
     global $user, $kom;
     foreach ($_POST as $k => $v) {
@@ -8,7 +8,6 @@ if (isset($_POST['login'])) {
     $user->login($login, $haslo);
     print_r($_SESSION);
 }
-
 ?> -->
 
 <form action="?id=<?php echo $strona['id']; ?>" method="POST" name="dane" id="dane">
@@ -20,7 +19,7 @@ if (isset($_POST['login'])) {
         </div>
         <div class="form-group">
             <label for="haslo2">Hasło:</label>
-            <input type="password" name="haslo2"  class="form-control">
+            <input type="password" name="haslo2" class="form-control">
         </div>
     </div>
     <input type="submit" value="Wyślij" class="btn btn-primary">
